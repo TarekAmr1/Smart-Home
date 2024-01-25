@@ -1,0 +1,95 @@
+00:33:16 **** Build of configuration Debug for project zl ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+In file included from ../DIO.h:12,
+                 from ../DIO.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../DIO.c
+ 
+Building file: ../EEPROM.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EEPROM.d" -MT"EEPROM.o" -c -o "EEPROM.o" "../EEPROM.c"
+Finished building: ../EEPROM.c
+ 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../DIO.h:12,
+                 from ../LCD.h:11,
+                 from ../LCD.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../LCD.c
+ 
+Building file: ../LED.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LED.d" -MT"LED.o" -c -o "LED.o" "../LED.c"
+In file included from ../DIO.h:12,
+                 from ../LED.h:11,
+                 from ../LED.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../LED.c
+ 
+Building file: ../SPI.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"SPI.d" -MT"SPI.o" -c -o "SPI.o" "../SPI.c"
+Finished building: ../SPI.c
+ 
+Building file: ../keypad_driver.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"keypad_driver.d" -MT"keypad_driver.o" -c -o "keypad_driver.o" "../keypad_driver.c"
+In file included from ../DIO.h:12,
+                 from ../keypad_driver.h:12,
+                 from ../keypad_driver.c:7:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../keypad_driver.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../DIO.h:12,
+                 from ../LCD.h:11,
+                 from ../main.c:2:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building file: ../menu.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"menu.d" -MT"menu.o" -c -o "menu.o" "../menu.c"
+In file included from ../DIO.h:12,
+                 from ../keypad_driver.h:12,
+                 from ../menu.h:7,
+                 from ../menu.c:1:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../menu.c
+ 
+Building file: ../timer_driver.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"timer_driver.d" -MT"timer_driver.o" -c -o "timer_driver.o" "../timer_driver.c"
+Finished building: ../timer_driver.c
+ 
+Building target: zl.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,zl.map -mmcu=atmega32 -o "zl.elf"  ./DIO.o ./EEPROM.o ./LCD.o ./LED.o ./SPI.o ./keypad_driver.o ./main.o ./menu.o ./timer_driver.o   
+Finished building target: zl.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S zl.elf  >"zl.lss"
+Finished building: zl.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 zl.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   26172 bytes (79.9% Full)
+(.text + .data + .bootloader)
+
+Data:        577 bytes (28.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
